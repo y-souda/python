@@ -134,8 +134,8 @@ def test_send(code,count):
 
 wakeonlan(BRAVIA_MAC)
 time.sleep(30)
-#cookie = bravia_auth(BRAVIA_IP, "80", "sony/accessControl", AUTH_HEADER, None );
-cookie = "auth=08c29d41679665c9b11b883a4ec7e43a8f9ccfbf73b7953a2aa12f38add28cce; path=/sony/; max-age=1209600; expires=Sat, 18-Aug-2018 04:10:41 GMT;"
+cookie = bravia_auth(BRAVIA_IP, "80", "sony/accessControl", AUTH_HEADER, None );
+#cookie = "auth=XXXXXXXXXXXXXXXXXX; path=/sony/; max-age=1209600; expires=Sat, 18-Aug-2018 04:10:41 GMT;"
 print(cookie)
 
 #print(bravia_req(BRAVIA_IP, "80", "sony/system", jdata_build("requestToNotifyDeviceStatus", ""), cookie))
